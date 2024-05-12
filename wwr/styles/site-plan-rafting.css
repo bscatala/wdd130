@@ -23,6 +23,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
+.heading-example{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2em;
+}
 header {
     padding: 20px;
     background-color: var(--accent1-color);
