@@ -30,14 +30,14 @@ main{
     max-width: 840px;
 }
 aside{
-    width: 20rem;
+    width: 22rem;
     text-align: center;
     position: relative;
 }
 aside h2{
     position: absolute;
-    top: 30px;
-    left: 105px;
+    top: 40px;
+    left: 120px;
     color:#eee
 }
 aside img{
@@ -58,7 +58,7 @@ footer{
 .box {
     margin: 1rem;
     border: 1px solid rgba(0,0,0,.2);
-    padding: 1.5rem;
+    padding: 2rem;
     background-color: #eee;
     color: #333;
   }
