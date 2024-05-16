@@ -32,12 +32,48 @@ body {
     margin: 0 auto; /* Center align the content */
     padding:0 20px; /* Add padding to keep content away from edges */
 }
-
 header {
     padding: 20px;
     background-color: var(--accent1-color);
 }
-header.nav{
-    text-decoration: none;
-    padding:5px;
+header nav{
+    text-decoration-line: none;
+    padding: 5px;
 }
+div .hero{
+    position: relative;
+}
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hero h1{
+    position: absolute;
+    top: 120px;
+    left: auto;
+    width: 1136px;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(246, 192, 42, 0.575);
+    color: white;
+}
+.hero article{
+    position: absolute;
+    top: 400px;
+    align-content: center;
+    margin-left: 3.5rem;
+    width: 1036px;
+    padding: 1.5rem;
+    background-color: rgba(73, 73, 36, 0.828);
+}
+article img{
+    float: right;
+    max-width: 120px;
+}
+article p{
+    color: white;
+    width: 80%;
+}
+
+  
