@@ -107,13 +107,18 @@ section h2{
     padding-top: 20px;
     border-top: 1px solid var(--secondary-color);
 }
-.gallery{
+.gallery {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     padding-bottom: 30px;
+    font-size: 14px;
+}
+figure{
+    margin: 10px;
 }
 .gallery img{
-    width: 220px;
+    width: 210px;
     height: auto;
 }
 footer{
