@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    max-width: 500px;
+    display: grid;
+}
+box{
+    background-color: aliceblue;
+    padding: 50px;
+    border: 1px solid grey;
+    margin: 20px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+h1 {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: rgb(56, 67, 130);
+    text-align: center;
+    width: 380px;
+}
+form{
+    font-family: 'Roboto', Arial, sans-serif;
+}
+div {
+    padding: 10px;
+}
+label{
+    padding-bottom: 10px;
+}
+input {
+    display: flex;
+    flex-direction: column;
+    width: 368px;
+    height: 20px;
+    padding: 4px;
+    box-sizing: content-box;
+    justify-items: center;
+}
+textarea {
+    width: 374px;
+    box-sizing: content-box;
+    justify-items: center;
+}
+select{
+    width: 368px;
+    height: 20px;
+    padding: 5px;
+    box-sizing: content-box;
+    justify-items: center;
+    font-style: italic;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+button{
+    margin-top: 15px;
+    padding: 5px;
+    width: 380px;
+    color: white;
+    background-color: rgb(56, 67, 130);
+}
