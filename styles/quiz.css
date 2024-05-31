@@ -1,25 +1,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+* {
+margin: 0 auto;
+padding: 0;
+box-sizing: border-box;
+}
 body {
     max-width: 500px;
     display: grid;
 }
-box{
+.all-content {
     background-color: aliceblue;
-    padding: 50px;
-    border: 1px solid grey;
-    margin: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-left: 50px;
     padding-bottom: 50px;
     padding-right: 50px;
+    border: 1px solid grey;
+    margin: 20px;
 }
 h1 {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     color: rgb(56, 67, 130);
     text-align: center;
     width: 380px;
+    padding-bottom: 30px;
 }
 form{
     font-family: 'Roboto', Arial, sans-serif;
@@ -35,18 +40,21 @@ input {
     flex-direction: column;
     width: 368px;
     height: 20px;
+    margin-top: 5px;
     padding: 4px;
     box-sizing: content-box;
     justify-items: center;
 }
 textarea {
     width: 374px;
+    margin-top: 5px;
     box-sizing: content-box;
     justify-items: center;
 }
 select{
     width: 368px;
     height: 20px;
+    margin-top: 5px;
     padding: 5px;
     box-sizing: content-box;
     justify-items: center;
