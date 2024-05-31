@@ -32,25 +32,26 @@ body {
 header {
     padding: 20px;
     background-color: var(--accent1-color);
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-around;
+    justify-items: center;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(3, 2em);
 }
 header img{
-    grid-column: 1;
+    grid-column: 2;
+    grid-row: 2;
     border-radius: 60px;
 }
 header nav{
     text-decoration-line: none;
     padding: 5px;
-    grid-column: 2;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    grid-column: 4/8;
+    grid-row: 2;
+    
 }
 header nav a {
     color: var(--primary-color);
-    display: block;
     padding: 2rem;
     text-decoration: none;
     font-size: 1.2rem;
@@ -78,8 +79,7 @@ header nav a {
     grid-row: 3;
     padding: 1.5rem;
     text-align: center;
-    /*background-color:  rgba(122, 186, 221, 0.650);*/
-   background-color: rgba(73, 73, 36, 0.800);
+    background-color: rgba(73, 73, 36, 0.800);
     color: white;
 }
 .hero article{
@@ -89,13 +89,12 @@ header nav a {
     align-content: center;
     justify-content: center;
     flex-direction: row-reverse;
-    padding: 1.5rem;
-    /*background-color:  rgba(122, 186, 221, 0.850);*/
+    padding: 1rem;
     background-color: rgba(73, 73, 36, 0.800);
 }
 article img{
     align-self: center;
-    max-width: 120px;
+    max-width: 110px;
 }
 article p{
     color: white;
