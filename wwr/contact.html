@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="wireframe" href="https://app.moqups.com/5J8KPA2WYA0Qhnd51BphicPfUTWYG1ya/view/page/ad12de680">
+
 </head>
 <body>
     <header>
@@ -26,16 +29,79 @@
           </nav>
     </header>
     <main>
-       <section>
-            <h1>Talk with our team</h1>
+       <section class="contact-us">
+            <div class="contact-header">
+                <h1>Reach our team</h1>
+                <p class="subtitle">We love questions and feedback, and we're always happy to help! Here are some ways to contact us.</p>
+            </div>
+            <div class="contact-info">
+                <figure>
+                    <img src="images/icon-location.png" alt="Icon:location">
+                    <figcaption>177 Huntington Ave <br>Ste 1703</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/icon-email.png" alt="Icon:email">
+                    <figcaption>contact-us@whitewaterraf.com</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/icon-phone.png" alt="Icon:phone">
+                    <figcaption>+1-617-555-0108</figcaption>
+                </figure>
+                <nav class="sociallinks">
+                    <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook" width="15"></a>
+                    <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter" width="15"></a>
+                    <a href="https://instagram.com"><img src="images/instagram-outline.svg" alt="Instagram" width="15"></a>
+                </nav>
+            </div>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6565.314176097678!2d-58.41149970889091!3d
-                -34.638104968148504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb16aaaaaaab%3A0x193a0d57ea10737a
-                !2sParque%20de%20los%20Patricios!5e0!3m2!1ses-419!2sar!4v1717177880529!5m2!1ses-419!2sar" 
-                width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9284.81398295922!2d-58.410135653927455!3d-34
+                .6375901451022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb16aaaaaaab%3A0x193a0d57ea10737a!2sParque%20de%20los%20
+                Patricios!5e0!3m2!1ses-419!2sar!4v1717602459657!5m2!1ses-419!2sar" width="400" height="300" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-       
+        <section class="employees">
+            <h2>Meet your guides!</h2>
+            <div class="guides">
+                <figure>
+                    <img src="images/happy-guide1.jpg" alt="Image:happy-employee">
+                    <figcaption>Angelina Combs<h4>The Leader</h4></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/happy-guide2.jpg" alt="Image:happy-employee">
+                    <figcaption>Cooper Noble<h4>The Entertainer</h4></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/happy-guide3.jpg" alt="Image:happy-employee">
+                    <figcaption>George Humphrey<h4>The Supporter</h4></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/happy-guide4.jpg" alt="Image:happy-employee">
+                    <figcaption>James Morgan<h4>The Educator</h4></figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="message-form">
+            <h2>Send Us a Message</h2>
+            <p>Send us a message and we'll respond within 24 hours.</p>
+            <form action="envio_form.php" method="POST">
+                <div class="name">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                </div>
+                <div class="message">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <p>&copy;2024 WhiteWater Rafting | Belén Contana</p>
