@@ -298,6 +298,10 @@ figure {
 .contact-header h1 {
     padding-left: 20px;
 }
+.subtitle {
+    margin-top: 0;
+    padding-top: 0;
+}
 .contact-us .map {
     grid-column: 2;
 }
@@ -329,6 +333,8 @@ figure {
     margin-top: 0;
 }
 .message-form {
+    width: 100%;
+    height: min-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -342,29 +348,51 @@ figure {
 }
 form {
     width: 50%;
+    height: 300px;
     display: grid;
     grid-template-columns: repeat(7, 14.26%);
-    grid-template-rows: repeat(3, 33%);
+    grid-template-rows: repeat(6, 50px);
+}
+.choose-option {
+    display: flex;
+    grid-row: 1;
+    grid-column: 1/8;
+    align-items: center;
+    justify-items: center;
+}
+input[type="radio"] {
+    width: auto;
+    margin: 5px;
 }
 label {
-    display: block;
     font-weight: bold;
     font-size: 12px;
+    padding-right: 30px;
+    vertical-align: middle;
 }
 .name {
     grid-column: 1/4;
-    grid-row: 1;
+    grid-row: 2;
+    width: 285px;
 }
 .email {
-    grid-column: 5/8;
-    grid-row: 1;
+    grid-column: 4/8;
+    grid-row: 2;
+    width: 285px;
+    margin-left: 50px;
 }
 .message {
     grid-column: 1/8;
-    grid-row: 2;
+    grid-row: 3/4;
+    padding-top: 10px;
+    height: 10px;
+}
+.message textarea {
+    height: 60px;
+    margin-bottom: 10px;
 }
 input, textarea {
-    width: 100%;
+    width: 98%;
     padding: 6px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -374,19 +402,30 @@ input:focus, textarea:focus {
     border-color: #007BFF;
     outline: none;
 }
+.checkbox {
+    max-height: 30px;
+    grid-row: 5;
+    grid-column: 1/8;
+    margin: 10px 0px;
+}
+input[type="checkbox"] {
+    width: 30px;
+    vertical-align: middle;
+    align-self: center;
+    
+}
 .button {
     grid-column: 4;
-    grid-row: 3;
+    grid-row: 6;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 button {
-    margin-top: 30px;
+    margin-top: 10px;
     color: white;
     width: 100px;
     height: 30px;
-    padding: 0px 10px;
+    padding: 6px 10px;
     background-color: var(--nav-hover-link-color);
     border-radius: 4px;
     font-family: var(--paragraph-font);

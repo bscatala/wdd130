@@ -37,7 +37,7 @@
             <div class="contact-info">
                 <figure>
                     <img src="images/icon-location.png" alt="Icon:location">
-                    <figcaption>177 Huntington Ave <br>Ste 1703</figcaption>
+                    <figcaption>1000 N Humphreys <br>St #202</figcaption>
                 </figure>
                 <figure>
                     <img src="images/icon-email.png" alt="Icon:email">
@@ -54,10 +54,10 @@
                 </nav>
             </div>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9284.81398295922!2d-58.410135653927455!3d-34
-                .6375901451022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb16aaaaaaab%3A0x193a0d57ea10737a!2sParque%20de%20los%20
-                Patricios!5e0!3m2!1ses-419!2sar!4v1717602459657!5m2!1ses-419!2sar" width="400" height="300" 
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104318.15201971933!2d-111.79985350273436!3d35
+                 .20790740000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8f4925df8c8f%3A0xce5dd6d06971e24!2sGrand
+                 %20Canyon%20Whitewater!5e0!3m2!1ses-419!2sar!4v1717640310846!5m2!1ses-419!2sar" width="400" height="300"
+                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
         <section class="employees">
@@ -85,6 +85,14 @@
             <h2>Send Us a Message</h2>
             <p>Send us a message and we'll respond within 24 hours.</p>
             <form action="envio_form.php" method="POST">
+                <div class="choose-option">
+                    <input type="radio" id="option-1" name="General Inquiry"></input>
+                    <label for="option-1">General Inquiry</label>
+                    <input type="radio" id="option-2" name="Reservation Question"></input>
+                    <label for="option-2">Reservation Question</label>
+                    <input type="radio" id="option-3" name="Website Suggestion"></input>
+                    <label for="option-3">Website Suggestion</label>
+                </div>
                 <div class="name">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -96,6 +104,10 @@
                 <div class="message">
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="subscribe" name="newsletter"></input>
+                    <label for="subscribe">Please subscribe me to the monthly newsletter.</label>
                 </div>
                 <div class="button">
                     <button type="submit">Send</button>
