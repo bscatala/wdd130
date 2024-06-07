@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - WhiteWater Rafting </title>
-    <meta name="description" content="My name is Belen Contana, this page is for my web development course, to learn and practice how to design a web site.">
+    <meta name="description" content="We are WhiteWater Rafting, a company that offer rafting adventures. Welcome to meet us.">
     <meta name="author" content="Belen Contana">
 
     <link rel="stylesheet" href="styles/rafting.css">
@@ -25,29 +25,30 @@
             <a href="contact.html">Contact us</a>
           </nav>
     </header>
-    <section class="hero">
-        <div class="image-container">
-            <img src="images/home.jpg" alt="Imagen Principal">
-            <div class="overlay">
-                <h1>WhiteWater Rafting</h1>
-                <div class="textexperience">
-                    <h3>Experience the Thrill of Rafting!</h3>
-                    <p>Join us for an unforgettable adventure on the rapids.<br> Fill out the form below to secure your spot and dive into the excitement!</p>
+    <main>
+        <section class="hero">
+            <div class="image-container">
+                <img src="images/home.jpg" alt="Imagen Principal">
+                <div class="overlay">
+                    <h1>WhiteWater Rafting</h1>
+                    <div class="textexperience">
+                        <h3>Experience the Thrill of Rafting!</h3>
+                        <p>Join us for an unforgettable adventure on the rapids.<br> Fill out the form below to secure your spot and dive into the excitement!</p>
+                    </div>
+                    <a href="contact.html" class="CTA">Contact us</a>
                 </div>
-                <a href="contact.html" class="CTA">Contact us</a>
-            </div>
-        </div>
-    </section>
-    <section class="more-info">
-            <img src="images/rafting-adventure-6.jpg" alt="Valley">
-            <div class="info-text">
-                <h2>More Than Just The Thrill</h2>
-                <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it’s way more than just the rapids. 
-                    It’s a great way to get away from it all and relax amongst all the beauty of the great outdoors.</p>
-                <a href="trips.html" class="CTA">See more</a>
             </div>
         </section>
-        <section class="activities">
+        <section class="more-info">
+                <img src="images/rafting-adventure-6.jpg" alt="Valley">
+                <div class="info-text">
+                    <h2>More Than Just The Thrill</h2>
+                    <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it’s way more than just the rapids. 
+                        It’s a great way to get away from it all and relax amongst all the beauty of the great outdoors.</p>
+                    <a href="trips.html" class="CTA">See more</a>
+                </div>
+        </section>
+        <div class="activities">
         <div class="bottom-images-container">
             <div class="bottom-image-wrapper">
                 <img src="images/happy-client4.jpg" alt="Imagen 1" class="bottom-image">
@@ -80,9 +81,29 @@
                 </div>
             </div>
         </div>
-    </section>
+        </div>
+        <section class="newsletter-form">
+            <h2>Want to subscribe to the monthly newsletter?</h2>
+            <form class="newsletter" action="envio_form.php" method="POST">
+                <div class="name">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                </div>
+                <div class="button">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </form>
+        </section>
+    </main>
     <footer>
         <p>&copy;2024 WhiteWater Rafting | Belén Contana</p>
+        <nav class="wireframe">
+            <a href="https://app.moqups.com/5J8KPA2WYA0Qhnd51BphicPfUTWYG1ya/view/page/aec12b63b?fit_width=1">Page Wireframe</a>
+        </nav>
         <nav class="sociallinks">
             <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook" width="30"></a>
             <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter" width="30"></a>
